@@ -6,7 +6,7 @@
 /*   By: elorenze <elorenze@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 22:09:20 by elorenze          #+#    #+#             */
-/*   Updated: 2022/03/01 00:43:22 by elorenze         ###   ########.fr       */
+/*   Updated: 2022/03/01 14:48:48 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,6 @@ static int	ft_atoi_sub(int sign, const char *str, const char *start)
 		mult *= 10;
 		if (ret == INT_MIN && str == start && sign == -1)
 			return (INT_MIN);
-		if (ret < 0)
-			return (0);
 	}
 	return (ret * sign);
 }
