@@ -6,7 +6,7 @@
 /*   By: elorenze <elorenze@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 22:25:32 by elorenze          #+#    #+#             */
-/*   Updated: 2022/03/01 14:51:39 by elorenze         ###   ########.fr       */
+/*   Updated: 2022/03/22 07:16:19 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	unsigned char	*ptr;
 
-	if (size == 0 || nmemb == 0)
-		return (NULL);
-	if (((~(size_t)0) / size) < nmemb)
+	if (size && (((size_t)-1) / size) < nmemb)
 		return (NULL);
 	ptr = malloc(size * nmemb);
 	if (ptr == NULL)

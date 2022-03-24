@@ -6,7 +6,7 @@
 /*   By: elorenze <elorenze@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 17:35:16 by elorenze          #+#    #+#             */
-/*   Updated: 2022/03/01 00:27:49 by elorenze         ###   ########.fr       */
+/*   Updated: 2022/03/22 07:24:40 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memcpy(void *dest, void *src, size_t n)
 {
 	if (dest == NULL || src == NULL)
-		return (NULL);
+		return (dest);
 	while (n)
 	{
 		n--;
