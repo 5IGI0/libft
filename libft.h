@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elorenze <elorenze@student.42nice.fr>      +#+  +:+       +#+        */
+/*   By: elorenze <elorenze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 18:02:54 by elorenze          #+#    #+#             */
-/*   Updated: 2022/03/01 00:51:25 by elorenze         ###   ########.fr       */
+/*   Updated: 2022/03/28 08:13:06 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stddef.h>
+# include "ft_printf/ft_printf.h"
 
 typedef struct s_list
 {
@@ -64,5 +65,11 @@ int		ft_toupper(int c);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_lstsize(t_list *lst);
+
+/* gestions des erreurs */
+void	ft_err(int eval, const char *fmt, ...);
+void	ft_errx(int eval, const char *fmt, ...);
+void	ft_warn(const char *fmt, ...);
+void	ft_warnx(const char *fmt, ...);
 
 #endif
