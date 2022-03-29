@@ -1,33 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elorenze <elorenze@student.42nice.fr>      +#+  +:+       +#+        */
+/*   By: elorenze <elorenze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/28 23:45:14 by elorenze          #+#    #+#             */
-/*   Updated: 2022/03/01 00:41:24 by elorenze         ###   ########.fr       */
+/*   Created: 2022/02/28 13:41:02 by elorenze          #+#    #+#             */
+/*   Updated: 2022/03/29 07:57:13 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "../../libft.h"
 
-#include "libft.h"
-
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	t_list	*ptr;
-	t_list	*next;
+	t_list	*tmp;
 
 	if (lst == NULL)
 		return ;
-	ptr = lst[0];
-	lst[0] = NULL;
-	while (ptr)
-	{
-		next = ptr->next;
-		del(ptr->content);
-		free(ptr);
-		ptr = next;
-	}
+	tmp = *lst;
+	*lst = new;
+	lst[0]->next = tmp;
 }

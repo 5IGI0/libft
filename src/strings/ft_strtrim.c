@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elorenze <elorenze@student.42nice.fr>      +#+  +:+       +#+        */
+/*   By: elorenze <elorenze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/27 21:02:12 by elorenze          #+#    #+#             */
-/*   Updated: 2022/03/01 00:42:27 by elorenze         ###   ########.fr       */
+/*   Updated: 2022/03/29 07:57:13 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stddef.h>
 
-#include "libft.h"
+#include "../../libft.h"
 
 static int	is_in_charset(char c, const char *set)
 {

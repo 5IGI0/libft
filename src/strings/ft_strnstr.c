@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elorenze <elorenze@student.42nice.fr>      +#+  +:+       +#+        */
+/*   By: elorenze <elorenze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 21:52:20 by elorenze          #+#    #+#             */
-/*   Updated: 2022/03/01 00:50:09 by elorenze         ###   ########.fr       */
+/*   Updated: 2022/03/29 07:57:13 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 
-#include "libft.h"
+#include "../../libft.h"
 
 static size_t	ft_strnlen(const char *s, size_t maxlen)
 {

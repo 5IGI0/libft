@@ -6,7 +6,7 @@
 /*   By: elorenze <elorenze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 08:00:57 by elorenze          #+#    #+#             */
-/*   Updated: 2022/03/28 08:21:45 by elorenze         ###   ########.fr       */
+/*   Updated: 2022/03/29 08:15:56 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 #include <string.h>
 #include <stdarg.h>
 
-#include "libft.h"
-#include "ft_printf/ft_printf.h"
+#include "../../libft.h"
+#include "../../ft_printf/ft_printf.h"
 
 void	ft_warn(const char *fmt, ...)
 {

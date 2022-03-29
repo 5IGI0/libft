@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elorenze <elorenze@student.42nice.fr>      +#+  +:+       +#+        */
+/*   By: elorenze <elorenze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/28 23:50:11 by elorenze          #+#    #+#             */
-/*   Updated: 2022/03/01 00:46:36 by elorenze         ###   ########.fr       */
+/*   Created: 2022/02/28 01:51:36 by elorenze          #+#    #+#             */
+/*   Updated: 2022/03/29 07:57:13 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+#include "../../libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
 {
-	while (lst)
-	{
-		f(lst->content);
-		lst = lst->next;
-	}
+	if (s)
+		write(fd, s, ft_strlen(s));
 }

@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elorenze <elorenze@student.42nice.fr>      +#+  +:+       +#+        */
+/*   By: elorenze <elorenze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/28 01:54:49 by elorenze          #+#    #+#             */
-/*   Updated: 2022/03/01 00:47:14 by elorenze         ###   ########.fr       */
+/*   Created: 2022/02/28 13:44:38 by elorenze          #+#    #+#             */
+/*   Updated: 2022/03/29 07:57:13 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "../../libft.h"
 
-#include "libft.h"
-
-void	ft_putendl_fd(char *s, int fd)
+int	ft_lstsize(t_list *lst)
 {
-	ft_putstr_fd(s, fd);
-	write(fd, "\n", 1);
+	int	c;
+
+	if (lst == NULL)
+		return (0);
+	c = 1;
+	while (lst->next)
+	{
+		lst = lst->next;
+		c++;
+	}
+	return (c);
 }

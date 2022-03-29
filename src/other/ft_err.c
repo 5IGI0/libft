@@ -6,7 +6,7 @@
 /*   By: elorenze <elorenze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 08:00:57 by elorenze          #+#    #+#             */
-/*   Updated: 2022/03/28 08:21:37 by elorenze         ###   ########.fr       */
+/*   Updated: 2022/03/29 08:15:54 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 #include <errno.h>
 #include <string.h>
 
-#include "libft.h"
-#include "ft_printf/ft_printf.h"
+#include "../../libft.h"
+#include "../../ft_printf/ft_printf.h"
 
 void	ft_err(int eval, const char *fmt, ...)
 {
