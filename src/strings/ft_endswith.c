@@ -21,5 +21,5 @@ int	ft_endswith(const char *str, const char *end)
 	s = ft_strlen(str);
 	if (e > s)
 		return (-1);
-	return (ft_memcmp(str + ft_strlen(str) - s, end, s));
+	return (ft_memcmp(str + s - e, end, s));
 }
