@@ -6,7 +6,7 @@
 /*   By: elorenze <elorenze@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 18:02:54 by elorenze          #+#    #+#             */
-/*   Updated: 2022/04/07 01:41:03 by elorenze         ###   ########.fr       */
+/*   Updated: 2022/04/13 16:43:29 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,11 +67,14 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_lstsize(t_list *lst);
 int		ft_endswith(const char *str, const char *end);
 int		ft_startswith(const char *str, const char *start);
+char	*ft_strchrnul(const char *s, int c);
 
 /* gestion des erreurs */
 void	ft_err(int eval, const char *fmt, ...);
 void	ft_errx(int eval, const char *fmt, ...);
 void	ft_warn(const char *fmt, ...);
+int		ft_warnret(int ret, const char *fmt, ...);
 void	ft_warnx(const char *fmt, ...);
+int		ft_warnretx(int ret, const char *fmt, ...);
 
 #endif
