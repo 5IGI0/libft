@@ -24,7 +24,6 @@ clean:
 re: fclean all
 
 ${NAME}: ${OBJS}
-	echo ${SRCS} 
 	ar rcs ${NAME} ${OBJS}
 
 bonus: ${BONUS_OBJS} ${NAME}
