@@ -6,11 +6,11 @@
 /*   By: elorenze <elorenze@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/16 15:38:27 by elorenze          #+#    #+#             */
-/*   Updated: 2022/04/16 15:40:58 by elorenze         ###   ########.fr       */
+/*   Updated: 2022/04/16 16:25:13 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isspace(int c)
 {
-	return (c <= '\r' && c >= '\t');
+	return ((c <= '\r' && c >= '\t') || c == ' ');
 }
