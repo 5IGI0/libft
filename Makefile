@@ -5,7 +5,7 @@ SRCS = $(addsuffix .c, \
 		$(addprefix src/other/, ft_err ft_warn)\
 		$(addprefix src/memory/, ft_calloc ft_memchr ft_memcpy ft_memcmp ft_memset ft_memmove ft_bzero)\
 		$(addprefix src/strings/, ft_atoi ft_isalnum ft_isalpha ft_isascii ft_isdigit ft_isprint ft_itoa ft_startswith ft_strchrnul)\
-		$(addprefix src/strings/, ft_split ft_strchr ft_strdup ft_striteri ft_strjoin ft_strlcat ft_strlcpy ft_endswith)\
+		$(addprefix src/strings/, ft_split ft_strchr ft_strdup ft_striteri ft_strjoin ft_strlcat ft_strlcpy ft_endswith ft_isspace)\
 		$(addprefix src/strings/, ft_strlen ft_strmapi ft_strncmp ft_strnstr ft_strrchr ft_strtrim ft_substr ft_toupper ft_tolower)\
 		$(addprefix ft_printf/, ft_printf ft_printers)\
 	)
