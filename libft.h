@@ -6,7 +6,7 @@
 /*   By: elorenze <elorenze@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/24 18:02:54 by elorenze          #+#    #+#             */
-/*   Updated: 2022/04/16 15:41:24 by elorenze         ###   ########.fr       */
+/*   Updated: 2022/04/19 07:53:16 by elorenze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,8 @@ int		ft_lstsize(t_list *lst);
 int		ft_endswith(const char *str, const char *end);
 int		ft_startswith(const char *str, const char *start);
 char	*ft_strchrnul(const char *s, int c);
+void	*ft_memdup(const void *str, size_t n);
+void	*ft_strndup(const char *str, size_t n);
 
 /* gestion des erreurs */
 void	ft_err(int eval, const char *fmt, ...);
