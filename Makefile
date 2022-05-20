@@ -9,6 +9,7 @@ SRCS = $(addsuffix .c, \
 		$(addprefix src/strings/, ft_strlen ft_strmapi ft_strncmp ft_strnstr ft_strrchr ft_strtrim ft_substr ft_toupper ft_tolower)\
 		$(addprefix src/strings/, ft_strndup)\
 		$(addprefix ft_printf/, ft_printf ft_printers)\
+		$(addprefix get_next_line/, get_next_line get_next_line_utils)\
 	)
 BONUS_SRCS = $(addsuffix .c, $(addprefix src/linked_list/, ft_lstadd_front ft_lstadd_back ft_lstdelone ft_lstiter ft_lstmap ft_lstnew ft_lstlast ft_lstsize ft_lstclear))
 OBJS = ${SRCS:.c=.o}
